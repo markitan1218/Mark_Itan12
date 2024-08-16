@@ -6,55 +6,66 @@
     <title>Document</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        .typing-animation {
-            font-family: monospace; 
-            white-space: nowrap;
-            overflow: hidden; 
-            border-right: 3px solid black; 
-            color: #087062; 
-            font-size: 40px; 
-            text-align: center; 
-            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-            margin: 0 auto; 
-            width: fit-content; 
-        }
+.typing-animation {
+    font-family: monospace;
+    white-space: normal; 
+    overflow: hidden;
+    border-right: 3px solid black;
+    color: #70083c;
+    font-size: 40px;
+    text-align: center;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    max-width: 90vw; 
+    box-sizing: border-box; 
+    padding: 0 10px; 
+}
 
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
-        }
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 
-        @keyframes blink-caret {
-            from, to {
-                border-color: transparent;
-            }
-            50% {
-                border-color: black;
-            }
-        }
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
 
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .typing-animation {
+        font-size: 24px; 
+        max-width: 95vw; 
+    }
+}
+
     </style>
 </head>
 
 <body>
-    <p class="typing-animation">Thank you for 
-        visiting my profile. 
-        Just DM me 
-        on Facebook.</p> 
+    <p class="typing-animation">
+        Thank you for visiting my profile. Just Dm me on Facebook</p> 
 </body>
 </html>
