@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const password = document.getElementById('password').value;
 
             if (users[username] && users[username] === password) {
-                window.location.href = 'index.html';
+                window.location.href = 'login.html';
             } else {
                 errorMessage.textContent = 'Invalid username or password';
             }
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('users', JSON.stringify(users));
                 createAccountMessage.textContent = 'Account created successfully!';
                 setTimeout(() => {
-                    window.location.href = 'login.html';
+                    window.location.href = 'index.html';
                 }, 1000);
             } else {
                 createAccountMessage.textContent = 'Username already exists';
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (backToLoginBtn) {
         backToLoginBtn.addEventListener('click', () => {
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         });
     }
 });
