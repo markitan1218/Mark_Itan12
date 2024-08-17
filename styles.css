@@ -7,6 +7,45 @@ body {
     padding: 0;
 }
 
+
+
+
+
+.footer {
+    background-color: #333; /* Optional: Dark background to highlight the text */
+    padding: 20px;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+.footer-text p {
+    color: #ff5722; /* Bright color for the text */
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for typewriter effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides the text initially */
+    border-right: 2px solid #ff5722; /* Optional: Cursor effect */
+    animation: typing 2s steps(40, end) 1, blink-caret 0.75s step-end infinite;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff5722; }
+}
+
+
+
+
+
+
+
 .container {
     max-width: 500px;
     margin: 50px auto;
