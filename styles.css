@@ -20,20 +20,22 @@ body {
     color: #ff5722;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
-    white-space: nowrap;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break properly */
     overflow: hidden;
     border-right: 2px solid #ff5722;
     animation: typing 2s steps(40, end) 1, blink-caret 0.75s step-end infinite;
 }
 
-/* Ensure Full Visibility on Mobile Devices */
+/* Further adjustments for mobile devices */
 @media screen and (max-width: 480px) {
     .footer {
-        padding: 15px; /* Reduced padding for mobile */
+        padding: 10px; /* Further reduced padding for mobile */
     }
     
     .footer-text p {
-        font-size: 14px; /* Slightly smaller font for mobile */
+        font-size: 12px; /* Smaller font for mobile */
+        line-height: 1.4; /* Adjust line height for readability */
     }
 }
 
@@ -46,6 +48,7 @@ body {
     from, to { border-color: transparent; }
     50% { border-color: #ff5722; }
 }
+
 
 
 
