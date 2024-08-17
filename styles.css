@@ -10,24 +10,31 @@ body {
 
 
 
-
 .footer {
-    background-color: #333; /* Optional: Dark background to highlight the text */
+    background-color: #333;
     padding: 20px;
     text-align: center;
-    flex-direction: column-reverse;
 }
 
 .footer-text p {
-    color: #ff5722; /* Bright color for the text */
+    color: #ff5722;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for typewriter effect */
-    white-space: nowrap; /* Prevents the text from wrapping */
-    overflow: hidden; /* Hides the text initially */
-    border-right: 2px solid #ff5722; /* Optional: Cursor effect */
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ff5722;
     animation: typing 2s steps(40, end) 1, blink-caret 0.75s step-end infinite;
-    margin-top: 2rem;
-    text-align: center;
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 15px;
+    }
+    
+    .footer-text p {
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
 }
 
 @keyframes typing {
@@ -39,7 +46,6 @@ body {
     from, to { border-color: transparent; }
     50% { border-color: #ff5722; }
 }
-
 
 
 
