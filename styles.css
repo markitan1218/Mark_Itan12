@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://th.bing.com/th/id/OIP.lmtWhdq_2XmwQOyIeodKlQHaGA?rs=1&pid=ImgDetMain') no-repeat center center fixed; /* Replace with actual image URL */
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #FFD700; /* Superman yellow */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+input, button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input {
+    background: #fff;
+    color: #000;
+}
+
+button {
+    background-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: #003d80;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Glow effect */
+}
+
+#errorMessage, #createAccountMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
